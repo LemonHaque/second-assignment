@@ -22,7 +22,7 @@
 
 .logo-title {
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 1.8rem;
     color: #131313;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .banner-title {
-    font-size:4rem;
+    font-size: 4rem;
     font-weight: 700;
     padding: 5px 250px;
 
@@ -159,7 +159,6 @@
 
 .features-des {
     font-weight: 400;
-
     font-size: 16px;
     color: #727272;
 
@@ -305,4 +304,94 @@
     padding: 30px 90px;
     background: #FFF4E7;
     border-radius: 8px;
+}
+
+/* responsive for mobile view */
+@media screen and (max-width:576px) {
+    .banner {
+        padding: 5px;
+    }
+
+    .nav-bar,
+    .nav-bar ul {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .banner-title {
+        font-size: 2.8em;
+    }
+
+    .banner-description {
+        font-size: 1em;
+    }
+
+    .quick-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .quick-list-area {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+
+    }
+
+    .quick-img {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .features::before {
+        display: none;
+    }
+
+    .features {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .features-img img {
+        width: 400px;
+
+    }
+
+    .secondary-btn {
+        margin: 15px;
+    }
+
+    .some-facts,
+    .card-area-title {
+        margin: 15px;
+        text-align: center;
+    }
+
+    .box {
+        margin: 10px 150px;
+    }
+
+    .some-fact-box {
+        flex-direction: column;
+    }
+
+    .card-area {
+        margin: 0 0 50px 0;
+    }
+
+    .card {
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center
+    }
+
+    .sponspor-logo {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .footer {
+        margin: 15px;
+    }
+
+
 }
