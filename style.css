@@ -6,9 +6,9 @@
 /* banner-background-styles */
 .banner {
     background: rgba(255, 144, 14, 0.1);
-    height: 100vh;
-    padding: 25px 230px 25px 230px;
-    margin-bottom: 30px;
+    padding: 25px 230px 50px 230px;
+    margin-bottom: 50px;
+
 }
 
 /* nav bar styles start */
@@ -16,25 +16,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 30px;
 
 }
 
 .logo-title {
     font-weight: 700;
-    font-size: 45px;
+    font-size: 2rem;
     color: #131313;
 }
 
 .nav-bar ul {
     list-style-type: none;
     display: flex;
-    gap: 15px;
+    gap: 25px;
 }
 
 .nav-bar ul li a {
     text-decoration: none;
     font-weight: 500;
-    font-size: 18px;
+    font-size: 1.2rem;
     color: #424242;
 }
 
@@ -51,7 +52,7 @@
 }
 
 .banner-title {
-    font-size: 64px;
+    font-size:4rem;
     font-weight: 700;
     padding: 5px 250px;
 
@@ -61,7 +62,7 @@
 .banner-description {
     padding: 5px 200px;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
     color: #727272;
 }
 
@@ -69,7 +70,7 @@
     background-color: #FF900E;
     color: #ffffff;
     border: none;
-    font-size: 20px;
+    font-size: 1.2rem;
     width: 180px;
     height: 64px;
     border-radius: 5px;
@@ -86,7 +87,7 @@
 .quick-list-area {
     display: flex;
     gap: 50px;
-    padding: 5px 250px;
+    padding: 50px 250px;
 }
 
 .quick-img {
@@ -100,15 +101,16 @@
     height: 342px;
 }
 
-.quick-right-side{
+.quick-right-side {
     display: flex;
     flex-direction: column;
     justify-content: center;
-   gap: 25px;
+    gap: 25px;
 }
+
 .quick-title {
     font-weight: 500;
-    font-size: 45px;
+    font-size: 2.8rem;
     color: #727272;
 }
 
@@ -125,7 +127,182 @@
 .quick-description {
     color: #727272;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 /* quick list styles end */
+/* features styles start */
+
+.features {
+    margin: 50px 220px;
+    display: flex;
+    gap: 50px;
+    margin-bottom: 30px;
+
+}
+
+.features::before {
+    content: " ";
+    width: 20px;
+    height: 106px;
+    background: #FF900E;
+    float: left;
+
+
+}
+
+.features-title {
+    font-weight: 700;
+    font-size: 2.8rem;
+    margin-bottom: 15px;
+}
+
+.features-des {
+    font-weight: 400;
+
+    font-size: 16px;
+    color: #727272;
+
+}
+
+.description-card {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+
+}
+
+.column-cards {
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 8px;
+    padding: 30px;
+    justify-content: center;
+}
+
+.secondary-btn {
+    font-size: 1.8rem;
+    font-weight: 700;
+    position: bottom left;
+    width: 250px;
+    height: 100px;
+    margin: -150px;
+
+}
+
+
+/* features styles end */
+/* some facts styles start */
+
+.some-facts {
+    margin: 65px 230px 0 230px;
+    padding: 30px 0;
+}
+
+.some-facts-title {
+    font-weight: 700;
+    font-size: 2.8rem;
+}
+
+.some-des {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #727272;
+    margin: 15px 0;
+}
+
+.some-fact-box {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 100px;
+}
+
+.box {
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+/* some facts styles end */
+
+/* extra section styles start */
+.card-area {
+    margin: 100px 200px;
+    text-align: center;
+
+}
+
+.card-area-title {
+    font-size: 2.8rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+
+
+}
+
+.cards {
+    width: 250px;
+    height: 320px;
+    padding: 20px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.cards img {
+    width: 250px;
+    height: 200px;
+}
+
+.card-title {
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/* extra section styles end */
+/* sponsor styles start */
+
+.our-sponsors {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+.sponsor-info {
+    font-weight: 400;
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+
+.sponsor-title {
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.sponspor-logo {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/* sponsor styles end */
+
+/* footer styles */
+.footer {
+    margin: 50px 220px;
+    text-align: center;
+    padding: 30px 90px;
+    background: #FFF4E7;
+    border-radius: 8px;
+}
